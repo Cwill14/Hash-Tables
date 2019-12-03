@@ -48,8 +48,10 @@ class DynamicArray:
 
 my_array = DynamicArray(3)
 
-my_array.insert(0, 5)
-my_array.insert(0, 4)
+my_array.delete(0)
+my_array.append(5)
+my_array.delete(0)
+my_array.prepend(4)
 
 print(my_array.storage)
 
@@ -57,9 +59,9 @@ my_array.insert(2, 3)
 
 print(my_array.storage)
 
-my_array.insert(2, 7)
+my_array.delete(2)
 
-my_array.prepend(8)
-my_array.append(9)
+# my_array.prepend(8)
+# my_array.append(9)
 
 
