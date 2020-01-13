@@ -169,6 +169,7 @@ class TestHashTable(unittest.TestCase):
 
         ht.resize()
 
+        print(f"len(ht.storage): {len(ht.storage)}")
         self.assertTrue(len(ht.storage) == 16)
 
         return_value = ht.retrieve("key-0")
